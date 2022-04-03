@@ -8,14 +8,13 @@
 </head>
 <body>
     <div class="containerDois">  
-        <% alimentos.forEach( item2 => { %> 
         <div class="itemDois">
-            <a href="/alimentos/<%= item2.id %>">
-                <h2><%= item2.nome %></h2>
-                <p><%= item2.descricao %></p>
-                <img src="<%= item2.imagem %>" alt="capa do filme">
+            <a href="/alimentos/<%= alimentoss.id %>">
+                <h2><%= alimentoss.nome %></h2>
+                <p><%= alimentoss.descricao %></p>
+                <img src="<%= alimentoss.imagem %>" alt="capa do filme">
             </a></div>    
-        <% }); %>
+
     </div>
 </body>
 </html>

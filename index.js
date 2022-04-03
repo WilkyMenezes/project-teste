@@ -13,7 +13,6 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded());
 
 
-
 app.get("/", async (req, res) => {
   const comidas = await Comidas.findAll();
   const alimentos = await Alimentos.findAll();
@@ -23,6 +22,11 @@ app.get("/", async (req, res) => {
   });
 });
 
+app.get("/listacardapio", async (req, res) => {
+  res.render("listacardapio", {
+    
+  });
+});
 
 
 const Alimentoss = require("./models/alimentos");
@@ -49,10 +53,16 @@ app.get("/comidas/:id", async (req, res) => {
 
 
 
-
-
-
-
-
-
   app.listen(port || process.env.PORT, () => console.log(`Servidor rodando em http://localhost:${port}`));
+
+
+
+
+  // app.get("/", async (req, res) => {
+  //   const comidas = await Comidas.findAll();
+  //   const alimentos = await Alimentos.findAll();
+  
+  //   res.render("index", {
+  //     comidas, alimentos
+  //   });
+  // });

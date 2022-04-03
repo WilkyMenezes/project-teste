@@ -5,10 +5,12 @@
 
 header {
     text-align: center;
+    padding-top: 5rem;
 }
 
 h1 {
     color: brown;
+    
 }
 
 .container{
@@ -72,3 +74,33 @@ h1 {
 
     
 }
+
+#menu {
+    list-style: none;
+    background-color: rgba(181, 78, 0, 0.849);
+    position: fixed;
+    width: 100%;
+  }
+  
+  #menu li {
+    display: inline;
+    
+    
+  }
+  
+  
+  #menu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem;
+    transition: background .4s;
+    color: black;
+    font-size: 1rem;
+    
+    
+  }
+  
+  #menu li a:hover{
+    background-color: brown;;
+    
+  }

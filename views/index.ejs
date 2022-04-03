@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li class="md"><a href="/cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Alimentos</h1>
     </header>
     
 <main>
-    <div class="container">  
+    <div class="container">
+          
         <% comidas.forEach( item => { %> 
         <div class="item">
+            <h2>Lista</h2> 
             <a href="/comidas/<%= item.id %>">
                 <h2><%= item.nome %></h2>
                 <p><%= item.descricao %></p>
@@ -25,9 +33,11 @@
         <% }); %>
     </div>
 
-    <div class="containerDois">  
+    <div class="containerDois">
+        
         <% alimentos.forEach( item2 => { %> 
         <div class="itemDois">
+            <h2>Lista</h2>  
             <a href="/alimentos/<%= item2.id %>">
                 <h2><%= item2.nome %></h2>
                 <p><%= item2.descricao %></p>
